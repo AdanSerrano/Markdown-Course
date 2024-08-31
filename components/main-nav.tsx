@@ -29,7 +29,7 @@ export const MainNav = () => {
                 pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
             )}
             >
-                Blog
+                About
             </Link>
         </nav>
     )
