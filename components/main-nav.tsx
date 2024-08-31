@@ -18,14 +18,14 @@ export const MainNav = () => {
                 </span>
             </Link>
             <Link href={'/blog'} className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
                 pathname === '/blog' ? 'text-foreground' : 'text-foreground/60'
             )}
             >
                 Blog
             </Link>
             <Link href={'/about'} className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
                 pathname === '/about' ? 'text-foreground' : 'text-foreground/60'
             )}
             >
