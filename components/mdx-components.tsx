@@ -1,12 +1,24 @@
 import React, { Fragment, ElementType } from 'react';
 import { type MDXComponents } from 'mdx/types';
-import Image from 'next/image';
 import * as runtime from 'react/jsx-runtime';
+import { Callout } from '@/components/callout';
 
 const useMDXComponents = (code: string): MDXComponents => {
     const fn = new Function(code);
     const components = fn(runtime);
-    return components as MDXComponents;
+    return {
+        ...components as MDXComponents,
+        Callout: () => (
+            <>
+                <Callout type='default'>
+                    jdflasfdbaks
+                </Callout>
+                <Callout type='default'>
+                    jdflasfdbaks
+                </Callout>
+            </>
+        ),
+    };
 }
 
 interface MDXComponentsProps {
