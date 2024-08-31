@@ -1,9 +1,10 @@
-import { Icons } from './icons'
+import { Icons } from '@/components/icons'
 import Link from 'next/link'
-import { MainNav } from './main-nav'
-import { MobileNav } from './mobile-nav'
+import { MainNav } from '@/components/main-nav'
+import { MobileNav } from '@/components/mobile-nav'
+import { ModeToggle } from '@/components/mode-toogle'
 import React from 'react'
-import { buttonVariants } from './ui/button'
+import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
 
@@ -28,10 +29,11 @@ export const SiteHeader = () => {
                         </Link>
                         <Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer">
                             <div className={cn(buttonVariants({ variant: 'ghost', size: 'icon' }), 'w-10 px-0 hidden sm:inline-flex')}>
-                                <Icons.twitter className="size-4" />
+                                <Icons.twitter className="size-4 " />
                                 <span className="sr-only">Twitter</span>
                             </div>
                         </Link>
+                        <ModeToggle />
                         <MobileNav />
                     </nav>
                 </div>

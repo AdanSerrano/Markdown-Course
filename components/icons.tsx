@@ -24,6 +24,7 @@ export const Icons = {
             shapeRendering="geometricPrecision"
             textRendering="geometricPrecision"
             imageRendering="optimizeQuality"
+            stroke="currentColor"
             fillRule="evenodd"
             clipRule="evenodd"
             viewBox="0 0 512 462.799"
@@ -38,6 +39,7 @@ export const Icons = {
             textRendering="geometricPrecision"
             imageRendering="optimizeQuality"
             fillRule="evenodd"
+            stroke="currentColor"
             clipRule="evenodd"
             viewBox="0 0 640 640"
             {...props}

@@ -2,10 +2,10 @@
 
 import Link, { LinkProps } from 'next/link'
 import React, { useState } from 'react'
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 
-import { Button } from './ui/button'
-import { Icons } from './icons'
+import { Button } from '@/components/ui/button'
+import { Icons } from '@/components/icons'
 import { Menu } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import { useRouter } from 'next/navigation'
